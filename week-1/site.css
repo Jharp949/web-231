@@ -1,38 +1,58 @@
-/*
+/**
   Title: index.html
   Author: James Harper
   Date: 3/15/2023
   Description: Web 231 - Week 1 - Assignment 1.3
 */
 
-/*  font-family: 'Oswald', 'Verdana', 'Arial', sans-serif; */
+/**
+  font-family: 'Oswald', 'Verdana', 'Arial', sans-serif;
+*/
 
-
+/**
+  Sets the body of the html document. font-family lists the fonts for the document in order of availability
+*/
 * {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
-
+/**
+  References the <div> with an id="container". Sets the margin top to 50px, right 100px,
+  bottom 0px, and left 100px.
+*/
 #container {
   margin: 50px 100px 0 100px;
 }
-
+/**
+  Style parameters for the HTML headings. In sequential order, sets the background
+  color, font color, border, and element padding. Colors are represented in hexadecimal
+  values. For border the 1px is the size and solid is the type. Padding sets the space
+  around the content.
+*/
 h1, h2, h3, h4 {
   background-color: #3C275A;
   color: #fff;
   border: 1px solid #D6A800;
   padding: 10px;
 }
-
+/**
+  Styling parameters for the anchor tag. text-decoration: none; removes the default
+  underline from the link.
+*/
 a {
   color: #453674;
   text-decoration: none;
 }
-
+/**
+  While the cursor is hovering over the anchor tag, sets the background color and
+  font color to a different hexadecimal value than what is defined in the body.
+*/
 a:hover {
   background-color: #D6A800;
   color: #4F3674;
 }
-
+/**
+  Changes the link color after the link has be clicked.
+*/
 a:visited {
   color: #3C275A;
 }
