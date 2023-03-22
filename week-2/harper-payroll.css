@@ -1,0 +1,13 @@
+/**
+  Title: harper-payroll.css
+  Author: James Harper
+  Date: 3/21/2023
+  Description: Web 231 - Week 2 - Assignment 2.2
+*/
+
+/**
+  Creates a dotted red border around the list items assigned to the list class.
+*/
+.list {
+  border: 1px dotted red;
+}
