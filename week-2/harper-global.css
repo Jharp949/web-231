@@ -5,14 +5,14 @@
   Description: Web 231 - Week 2 - Assignment 2.2
 */
 /**
-  font-family: 'Oswald', 'Verdana', 'Arial', sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 */
 
 /**
   Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
 */
 * {
-  font-family: 'Oswald', Verdana, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 /**
   Styles the anchor tag in harper-payroll.html with the id of return-home.
