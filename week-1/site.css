@@ -6,14 +6,14 @@
 */
 
 /**
-  font-family: 'Oswald', 'Verdana', 'Arial', sans-serif;
+  font-family: 'Roboto', 'Verdana', 'Arial', sans-serif;
 */
 
 /**
   Sets the body of the html document. font-family lists the fonts for the document in order of availability
 */
 * {
-  font-family: 'Oswald', Verdana, Arial, sans-serif;
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
 }
 /**
   References the <div> with an id="container". Sets the margin top to 50px, right 100px,
