@@ -104,3 +104,10 @@ Assigns properties to any element with the form-field class. Sets padding on all
 .form-field {
   padding: 20px;
 }
+/**
+Color and removal of underline from the link at the bottom of the page.
+*/
+.return-home {
+  color: #4F3674;
+  text-decoration: none;
+}
