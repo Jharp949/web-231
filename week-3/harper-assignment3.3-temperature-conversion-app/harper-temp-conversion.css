@@ -1,0 +1,106 @@
+/**
+  Title: harper-temp-conversion.css
+  Author: James Harper
+  Date: 4/1/2023
+  Description: Web 231 - Week 3 - Assignment 3.3
+*/
+
+/**
+  Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
+*/
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+/**
+Styles the main heading with font thickness and alignment.
+*/
+h1, h4 {
+  font-weight: 400;
+  text-align: center;
+}
+/**
+Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 345px, no border,
+no text decoration, sets the cursor to a pointer.
+*/
+.btn-primary {
+  background-color: #4F3674;
+  color: #fff;
+  width: 345px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 40px 0 25px 15px;
+  cursor: pointer;
+  padding: 15px 32px;
+}
+/**
+Sets all classes named form to a width of 355px.
+*/
+.form {
+  width: 355px;
+}
+/**
+Id for the fahrenheit value label. Assigns the element to column 1. Text thickness to 300 and aligned center.
+Margins set to auto fill.
+*/
+#fahVal {
+  grid-column-start: 1;
+  font-weight: 300;
+  text-align: right;
+  margin: auto;
+}
+/**
+Assigns the input from the input class to column 2.
+*/
+.input {
+  grid-column-start: 2;
+}
+/**
+Adjusts the width and margin for the card with an id of converter.
+*/
+#converter {
+  width: 700px;
+  margin: auto;
+}
+/**
+conversion-title id margin to auto.
+*/
+#conversion-title {
+  margin: auto;
+}
+/**
+Width and margin adjusted for the result id.
+*/
+#result {
+  width: 700px;
+  margin: 30px auto auto auto;
+}
+/**
+Centers text within the element and margin to auto for the container that holds the return temp value.
+*/
+#calc-content {
+  text-align: center;
+  margin: auto;
+}
+/**
+Increases the font size of the return value by twice the default size.
+*/
+#calculation {
+  font-size: 2em;
+}
+/**
+Container for the return link. Allows for the link to match the two cards in space.
+*/
+#link-container {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+}
+/**
+Return to main page link.
+*/
+.return-home {
+  float: left;
+  margin-top: 5px;
+}
