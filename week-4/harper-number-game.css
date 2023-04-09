@@ -19,6 +19,12 @@ h1, h4 {
   text-align: center;
 }
 /**
+
+*/
+#pick-heading {
+
+}
+/**
 Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 345px, no border,
 no text decoration, sets the cursor to a pointer.
 */
