@@ -39,7 +39,6 @@ Sets all classes named form to a width of 355px.
 */
 .form {
   width: 355px;
-  padding-top: 35px;
 }
 /**
 Id for the input label. Assigns the element to column 1. Text thickness to 300 and aligned center.
