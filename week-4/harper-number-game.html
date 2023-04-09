@@ -1,0 +1,73 @@
+<!-- Establishes the type of document -->
+<!DOCTYPE html>
+<!-- Sets the document type as HTML in english -->
+<html lang="en">
+<!--
+  Title: harper-number-game.html
+  Author: James Harper
+  Date: 4/9/2023
+  Description: Web 231 - Week 4 - Assignment 4.2
+-->
+<!-- Defines the metadata information such as document title, character set, styles, scripts,
+  and other meta information.
+-->
+  <head>
+    <!-- Defines the title of the document -->
+    <title>WEB 231 - Enterprise Javascript I: Assignment 4.2</title>
+    <!-- Links the stylesheet to the HTML document -->
+    <link rel="stylesheet" href="harper-number-game.css" type="text/css">
+    <link rel="stylesheet" href="../global.css" type="text/css">
+    <!-- The link acquires the Roboto font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <!-- Establishes the body of the HTML document. This is where all of the visual and user interaction lies. -->
+  <body>
+    <!-- Container division for the markup -->
+    <div id="container">
+      <!-- Heading 1 and title of the document. -->
+      <h1 class="heading-style">Welcome to the numbers game!</h1>
+        <!-- First card. Contains the number value input form and button. -->
+        <div class="card" id="numInput">
+          <!-- Container for the first card title. -->
+          <div class="card-title">
+            <!-- card title. -->
+            <h4 id="num-title">Pick a number between 1 and 10</h4>
+          </div>
+            <!-- content for the first card. -->
+            <div class="card-content">
+              <!-- Form which contains a text input. -->
+              <form class="form">
+                <label for="num-value" id="numVal">Guess the number:</label>
+                <input type="text" class="input" id="input-value" name="num-value">
+              </form>
+              <!-- button which executes the chkGuess function when clicked. -->
+              <button class="btn-primary" onclick="chkGuess()">Submit!</button>
+            </div>
+        </div>
+        <!-- Second card container which hold the calculated conversion results. -->
+        <div class="card" id="result">
+          <!-- Title container. -->
+          <div class="card-title">
+            <!-- Conversion results card title. -->
+            <h4 id="num-title">Results</h4>
+          </div>
+            <!-- Second card content container. -->
+            <div class="card-content" id="num-content">
+              <!-- Span which holds the returned calculated value of calcCelsius() -->
+             <span id="guessResult"></span>
+            </div>
+        </div>
+
+      <div id="link-container">
+        <!-- Clickable link to return home directory on GitHub. -->
+        <a href="https://Jharp949.github.io/web-231/" class="return-home">Return</a>
+      </div>
+    </div>
+    <!-- Links harper-number-game.js to harper-number-game.html. -->
+    <script src="harper-number-game.js"></script>
+
+  </body>
+
+</html>
