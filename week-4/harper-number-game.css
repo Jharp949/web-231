@@ -65,9 +65,9 @@ Adjusts the width and margin for the card with an id of numInput.
   margin: auto;
 }
 /**
-num-title id margin to auto.
+num-title class margin to auto.
 */
-#num-title {
+.num-title {
   margin: auto;
 }
 /**
