@@ -1,7 +1,7 @@
 /**
   Title: harper-sequence-game.css
   Author: James Harper
-  Date: 4/9/2023
+  Date: 4/14/2023
   Description: Web 231 - Week 5 - Assignment 5.2
 */
 
@@ -19,13 +19,13 @@ h1, h4 {
   text-align: center;
 }
 /**
-Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 345px, no border,
+Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 400px, no border,
 no text decoration, sets the cursor to a pointer.
 */
 .btn-primary {
   background-color: #4F3674;
   color: #fff;
-  width: 345px;
+  width: 400px;
   border: none;
   text-decoration: none;
   font-size: 16px;
@@ -34,16 +34,16 @@ no text decoration, sets the cursor to a pointer.
   padding: 15px 32px;
 }
 /**
-Sets all classes named form to a width of 355px.
+Sets all classes named form to a width of 400px.
 */
 .form {
-  width: 355px;
+  width: 400px;
 }
 /**
 Id for the input label. Assigns the element to column 1. Text thickness to 300 and aligned center.
 Margins set to auto fill.
 */
-#numVal {
+#seqVal {
   grid-column-start: 1;
   font-weight: 300;
   text-align: right;
@@ -54,11 +54,12 @@ Assigns the input from the input class to column 2.
 */
 .input {
   grid-column-start: 2;
+  background-color: #fff;
 }
 /**
-Adjusts the width and margin for the card with an id of numInput.
+Adjusts the width and margin for the card with an id of seqInput.
 */
-#numInput {
+#seqInput {
   width: 700px;
   margin: auto;
 }
@@ -70,7 +71,7 @@ Width and margin adjusted for the result id.
   margin: auto;
 }
 /**
-
+id for the h4 heading Sequence Results.
 */
 #result-heading {
   margin: 30px auto auto auto;
@@ -78,14 +79,14 @@ Width and margin adjusted for the result id.
 /**
 Centers text within the element and margin to auto for the container that holds the return number value.
 */
-#num-content {
+#seq-content {
   text-align: center;
   margin: auto;
 }
 /**
 Increases the font size of the return value by twice the default size.
 */
-#guessResult {
+#seqResult {
   font-size: 2em;
 }
 /**
@@ -94,7 +95,7 @@ Container for the return link. Allows for the link to match the two cards in spa
 #link-container {
   width: 700px;
   text-align: center;
-  margin: auto;
+  margin: 10px auto;
 }
 /**
 Return to main page link.
