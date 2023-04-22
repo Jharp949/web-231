@@ -1,0 +1,116 @@
+/**
+  Title: harper-bookstore.css
+  Author: James Harper
+  Date: 4/21/2023
+  Description: Web 231 - Week 6 - Assignment 6.2
+*/
+
+/**
+  Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
+*/
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+/**
+Styles the main heading with font thickness and alignment.
+*/
+h1, h4 {
+  font-weight: 400;
+  text-align: center;
+}
+
+h3 {
+  font-weight: lighter;
+}
+/**
+Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 400px, no border,
+no text decoration, sets the cursor to a pointer.
+*/
+.btn-primary {
+  background-color: #4F3674;
+  color: #fff;
+  width: 390px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 40px 0 25px 15px;
+  cursor: pointer;
+  padding: 15px 32px;
+}
+/**
+Sets all classes named form to a width of 400px.
+*/
+.form {
+  width: 400px;
+}
+/**
+Id for the input label. Assigns the element to column 1. Text thickness to 300 and aligned center.
+Margins set to auto fill.
+*/
+#bookVal {
+  grid-column-start: 1;
+  font-weight: 300;
+  text-align: right;
+  margin: auto 5px auto auto;
+}
+/**
+Assigns the input from the input class to column 2.
+*/
+.input {
+  grid-column-start: 2;
+  background-color: #fff;
+}
+/**
+
+*/
+#input-vlaue {
+
+}
+/**
+Adjusts the width and margin for the card with an id of seqInput.
+*/
+#bookInput {
+  width: 700px;
+  margin: auto;
+}
+/**
+Width and margin adjusted for the result id.
+*/
+#result {
+  width: 700px;
+  margin: auto;
+}
+/**
+id for the h4 heading Sequence Results.
+*/
+#result-heading {
+  margin: 30px auto auto auto;
+}
+/**
+Centers text within the element and margin to auto for the container that holds the return number value.
+*/
+#book-content {
+  text-align: center;
+  margin: auto;
+}
+/**
+Increases the font size of the return value by twice the default size.
+*/
+#bookResult {
+  font-size: 2em;
+}
+/**
+Container for the return link. Allows for the link to match the two cards in space.
+*/
+#link-container {
+  width: 700px;
+  text-align: center;
+  margin: 10px auto;
+}
+/**
+Return to main page link.
+*/
+.return-home {
+  float: left;
+  margin-top: 5px;
+}

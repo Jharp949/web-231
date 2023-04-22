@@ -111,3 +111,26 @@ Color and removal of underline from the link at the bottom of the page.
   color: #4F3674;
   text-decoration: none;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+table, th {
+  padding: 12px 0;
+  text-align: left;
+  background-color: #4F3674;
+  color: #FFF;
+}
+
+table, td, th {
+  border: solid 1px #DDD;
+}
+
+table tr:hover {
+  background-color: #D6A800;
+  color: #4F3674;
+  cursor: pointer;
+}
