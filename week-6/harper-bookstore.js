@@ -16,9 +16,10 @@ publishers.reverse();
 
 function display() {
   const choice = document.getElementById('input-value').value;
+  let row = '';
 
   switch(choice) {
-    case books:
+    case 'books':
       let tblBooks = `
         <h3>Books Listing</h3>
         <table class='table'>
@@ -28,36 +29,83 @@ function display() {
             </tr>
           </thead>
           <tbody>
-      `
+      `;
+
+      for (let book = 0; book < books.length; book++) {
+        row = `
+          <tr>
+            <td>` + books[book] + `</td>
+          </tr>
+        `;
+        tblBooks += row;
+      }
+
+      tblBooks += `
+        </tbody>
+      </table>
+      `;
+
+      document.getElementById('bookResult').innerHTML = tblBooks;
+
     break;
 
-    case authors:
+    case 'authors':
       let tblAuthors = `
-        <h3>Books Listing</h3>
+        <h3>Authors Listing</h3>
         <table class='table'>
           <thead>
             <tr>
-              <th>Title</th>
+              <th>Full Name</th>
             </tr>
           </thead>
           <tbody>
-      `
+      `;
+
+      for (let author = 0; author < authors.length; author++) {
+        row = `
+          <tr>
+            <td>` + authors[author] + `</td>
+          </tr>
+        `;
+        tblAuthors += row;
+      }
+
+      tblAuthors += `
+        </tbody>
+      </table>
+    `;
+      document.getElementById('bookResult').innerHTML = tblAuthors;
     break;
 
-    case publishers:
+    case 'publishers':
       let tblPublishers = `
-        <h3>Books Listing</h3>
+        <h3>Publisher Listing</h3>
         <table class='table'>
           <thead>
             <tr>
-              <th>Title</th>
+              <th>Company</th>
             </tr>
           </thead>
           <tbody>
-      `
+      `;
+
+      for (let publisher = 0; publisher < publishers.length; publisher++) {
+        row = `
+          <tr>
+            <td>` + publishers[publisher] + `</td>
+          </tr>
+        `;
+        tblPublishers += row;
+      }
+
+      tblPublishers += `
+        </tbody>
+      </table>
+      `;
+      document.getElementById('bookResult').innerHTML = tblPublishers;
     break;
 
-    //Creates an alert box that displays a message if one of the three case values is somehow not selected.
+    //Creates an alert box that displays a message if one of the three case values is not selected.
     default:
       alert('Invalid selection, please try again.')
   }
