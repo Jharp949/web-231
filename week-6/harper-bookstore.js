@@ -18,6 +18,7 @@ publishers.reverse();
 function display() {
   const choice = document.getElementById('input-value').value; //retrieves user selection from the select element.
   let row = ''; //Empty variable used to stored the iterated array values.
+  //let index = 0;
 //switch statement which executes a task based on the users selected option.
   switch(choice) {
     //When the books value is selected, returns the following program.
@@ -43,6 +44,14 @@ function display() {
         `;
         tblBooks += row;
       }
+/*      do { index++
+        row = `
+        <tr>
+          <td>` + books[index] + `</td>
+        </tr>
+      `;
+      tblBooks += row;
+      } while (index < books.length)*/
       //Adds the closing tags to the tblBooks variable.
       tblBooks += `
         </tbody>
