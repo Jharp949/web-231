@@ -14,12 +14,15 @@ publishers.reverse();
 //console.log(authors);
 //console.log(publishers);
 
+//Function for the onclick event button from the linked HTML document.
 function display() {
-  const choice = document.getElementById('input-value').value;
-  let row = '';
-
+  const choice = document.getElementById('input-value').value; //retrieves user selection from the select element.
+  let row = ''; //Empty variable used to stored the iterated array values.
+//switch statement which executes a task based on the users selected option.
   switch(choice) {
+    //When the books value is selected, returns the following program.
     case 'books':
+      //variable which stores a preset table.
       let tblBooks = `
         <h3>Books Listing</h3>
         <table class='table'>
@@ -30,7 +33,8 @@ function display() {
           </thead>
           <tbody>
       `;
-
+      //for loop setup to iterate through the books array. Each index value is stored in the row variable,
+      //then added to the tblBooks variable to create the table data.
       for (let book = 0; book < books.length; book++) {
         row = `
           <tr>
@@ -39,17 +43,18 @@ function display() {
         `;
         tblBooks += row;
       }
-
+      //Adds the closing tags to the tblBooks variable.
       tblBooks += `
         </tbody>
       </table>
       `;
-
+      //Assigns the completed information to the id bookResult.
       document.getElementById('bookResult').innerHTML = tblBooks;
-
+    //Ends the program.
     break;
-
+    //When the authors value is selected, returns the following program.
     case 'authors':
+      //variable which stores a preset table.
       let tblAuthors = `
         <h3>Authors Listing</h3>
         <table class='table'>
@@ -60,7 +65,8 @@ function display() {
           </thead>
           <tbody>
       `;
-
+      //for loop setup to iterate through the authors array. Each index value is stored in the row variable,
+      //then added to the tblAuthors variable to create the table data.
       for (let author = 0; author < authors.length; author++) {
         row = `
           <tr>
@@ -69,15 +75,18 @@ function display() {
         `;
         tblAuthors += row;
       }
-
+      //Adds the closing tags to the tblAuthors variable.
       tblAuthors += `
         </tbody>
       </table>
     `;
+      //Assigns the completed information to the id bookResult.
       document.getElementById('bookResult').innerHTML = tblAuthors;
+    //Ends the program.
     break;
-
+    //When the authors value is selected, returns the following program.
     case 'publishers':
+      //variable which stores a preset table.
       let tblPublishers = `
         <h3>Publisher Listing</h3>
         <table class='table'>
@@ -88,7 +97,8 @@ function display() {
           </thead>
           <tbody>
       `;
-
+      //for loop setup to iterate through the publishers array. Each index value is stored in the row variable,
+      //then added to the tblPublishers variable to create the table data.
       for (let publisher = 0; publisher < publishers.length; publisher++) {
         row = `
           <tr>
@@ -97,12 +107,14 @@ function display() {
         `;
         tblPublishers += row;
       }
-
+      //Adds the closing tags to the tblPublishers variable.
       tblPublishers += `
         </tbody>
       </table>
       `;
+      //Assigns the completed information to the id bookResult.
       document.getElementById('bookResult').innerHTML = tblPublishers;
+    //Ends the program./
     break;
 
     //Creates an alert box that displays a message if one of the three case values is not selected.

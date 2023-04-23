@@ -118,7 +118,7 @@ Color and removal of underline from the link at the bottom of the page.
   text-decoration: none;
 }
 /**
-
+Sets table borders to single border. Width to 100% of the parent. Margin bottom increased by 30px.
 */
 table {
   border-collapse: collapse;
@@ -126,7 +126,8 @@ table {
   margin-bottom: 30px;
 }
 /**
-
+Heading for tables have the padding increased by 12px for the top and bottom, text aligned left, background color
+changed, font color changed.
 */
 table th {
   padding: 12px 0;
@@ -135,14 +136,15 @@ table th {
   color: #FFF;
 }
 /**
-
+Table data and table heading add an off-white solid border. Padding increased all around by 5px.
 */
 table td, table th {
   border: solid 1px #DDD;
   padding: 5px;
 }
 /**
-
+Table row when mouse pointer hovers over the element. Background color changed, font color changed, mouse cursor
+changed to a pointer.
 */
 table tr:hover {
   background-color: #D6A800;
