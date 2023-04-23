@@ -5,6 +5,12 @@
   Description: Web 231
 */
 /**
+  Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
+*/
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+/**
 Assigns properties to any element with the card class. Shadows on the right and bottom with color black. The transition
 property set the time for the effect to take place in seconds.
 */
@@ -111,24 +117,33 @@ Color and removal of underline from the link at the bottom of the page.
   color: #4F3674;
   text-decoration: none;
 }
+/**
 
+*/
 table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 30px;
 }
+/**
 
-table, th {
+*/
+table th {
   padding: 12px 0;
   text-align: left;
   background-color: #4F3674;
   color: #FFF;
 }
+/**
 
-table, td, th {
+*/
+table td, table th {
   border: solid 1px #DDD;
+  padding: 5px;
 }
+/**
 
+*/
 table tr:hover {
   background-color: #D6A800;
   color: #4F3674;

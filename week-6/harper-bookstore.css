@@ -6,17 +6,17 @@
 */
 
 /**
-  Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
-*/
-body {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-}
-/**
 Styles the main heading with font thickness and alignment.
 */
 h1, h4 {
   font-weight: 400;
   text-align: center;
+}
+/**
+Adds padding to the top of each heading 4.
+*/
+h4 {
+  padding-top: 5px;
 }
 
 h3 {
@@ -61,13 +61,7 @@ Assigns the input from the input class to column 2.
   background-color: #fff;
 }
 /**
-
-*/
-#input-vlaue {
-
-}
-/**
-Adjusts the width and margin for the card with an id of seqInput.
+Adjusts the width and margin for the card with an id of bookInput.
 */
 #bookInput {
   width: 700px;
@@ -81,7 +75,7 @@ Width and margin adjusted for the result id.
   margin: auto;
 }
 /**
-id for the h4 heading Sequence Results.
+id for the h4 heading Book Results.
 */
 #result-heading {
   margin: 30px auto auto auto;
@@ -90,14 +84,8 @@ id for the h4 heading Sequence Results.
 Centers text within the element and margin to auto for the container that holds the return number value.
 */
 #book-content {
-  text-align: center;
+  text-align: left;
   margin: auto;
-}
-/**
-Increases the font size of the return value by twice the default size.
-*/
-#bookResult {
-  font-size: 2em;
 }
 /**
 Container for the return link. Allows for the link to match the two cards in space.
