@@ -38,14 +38,12 @@
             <!-- Content for the first card. -->
             <div class="card-content">
               <!-- Form which contains a selectable input. -->
-              <form class="form">
-                <!-- Label for the select options list. -->
-                <label for="input-value" id="calcVal">Choose a listing:</label>
-                <input type="text" id="multInputOne" name="multInputOne">
-                <input type="text" id="multInputTwo" name="multInputTwo">
+              <form class="calc-container">
+                <input type="text" class ="input" id="multInputOne" name="multInputOne">
+                <input type="text" class ="input" id="multInputTwo" name="multInputTwo">
               </form>
               <!-- button which executes the display() JS function when clicked. -->
-              <button class="btn-primary" onclick="multiply()">Display Listing</button>
+              <button class="btn-primary" onclick="displayMultiplyResults()">Display Listing</button>
             </div>
         </div>
         <!-- Second card container which hold the results. -->
@@ -56,9 +54,9 @@
             <h4 id="result-heading">Results</h4>
           </div>
             <!-- Second card content container. -->
-            <div class="card-content" id="calc-content">
+            <div class="card-content" id="mul-results">
               <!-- Span which holds the returned value. -->
-             <span id="calcResult"></span>
+             <span id="multResult"></span>
             </div>
         </div>
 

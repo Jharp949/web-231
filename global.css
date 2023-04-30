@@ -76,7 +76,7 @@ Background color to the hex code indicated, text color to the hex indicated.
   color: #4F3674;
 }
 /**
-Assigns properties to any element with the btn-primary class. Padding top and bottom to 12px, padding left and right
+Assigns properties to any element with the input class. Padding top and bottom to 12px, padding left and right
 to 20px, margin top and bottom to 8px, margin right and left to 0px, removes the default text styling, aligns all
 elements in a horizontal row side by side, creates a border 1px solid with hex code #ccc as the color,
 border radius adjust the four points of the element by rounding them based on px value, creates a border around the

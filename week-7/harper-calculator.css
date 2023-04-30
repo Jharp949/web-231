@@ -23,44 +23,6 @@ h3 {
   font-weight: lighter;
 }
 /**
-Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 400px, no border,
-no text decoration, sets the cursor to a pointer.
-*/
-.btn-primary {
-  background-color: #4F3674;
-  color: #fff;
-  width: 390px;
-  border: none;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 40px 0 25px 15px;
-  cursor: pointer;
-  padding: 15px 32px;
-}
-/**
-Sets all classes named form to a width of 400px.
-*/
-.form {
-  width: 400px;
-}
-/**
-Id for the input label. Assigns the element to column 1. Text thickness to 300 and aligned center.
-Margins set to auto fill.
-*/
-#calcVal {
-  grid-column-start: 1;
-  font-weight: 300;
-  text-align: right;
-  margin: auto 5px auto auto;
-}
-/**
-Assigns the input from the input class to column 2.
-*/
-.input {
-  grid-column-start: 2;
-  background-color: #fff;
-}
-/**
 Adjusts the width and margin for the card with an id of bookInput.
 */
 #calcInput {
@@ -101,4 +63,28 @@ Return to main page link.
 .return-home {
   float: left;
   margin-top: 5px;
+}
+/**
+
+*/
+.calc-container {
+  display: grid;
+  width: 800px;
+  margin: 3% auto 0;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+/**
+
+*/
+#mul-results {
+  text-align: center;
+  font-size: 28px;
+}
+/**
+
+*/
+#div-results {
+  text-align: center;
+  font-size: 28px;
 }

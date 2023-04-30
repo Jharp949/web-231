@@ -5,36 +5,60 @@
 
 
 function multiply(multiplyOne, multiplyTwo) {
-  if (isNaN(multiplyOne) && isNaN(multiplyTwo) === 'False') {
-    let product = multiplyOne * multiplyTwo;
-  } else {
+
+  let product = multiplyOne * multiplyTwo;
+
+  if (isNaN(multiplyOne) && isNaN(multiplyTwo) === 'True') {
     throw alert('inputs must be numbers.');
   }
+
   return product;
 }
+//console.log(multiply(5, 9));
+
 
 function divide(divideOne, divideTwo) {
+
+  let division = divideOne / divideTwo;
+
   if (divideTwo === 0) {
     throw alert('cannot divide by zero');
-  } else if (isNaN(divideOne) && isNaN(divideTwo) && divideOne < 0 && divideTwo < 0 === 'False') {
-    let division = divideOne / divideTwo;
-  } else {
+  } else if (isNaN(divideOne) && isNaN(divideTwo) === 'True') {
     throw alert('inputs must be numbers.');
+  } else if (divideOne < 0 || divideTwo < 0 === 'True') {
+    throw alert('inputs must be valid numbers.');
   }
+
   return division;
 }
+//console.log(divide(28, 7));
 
 function displayMultiplyResults() {
-  multiplyValueOne = document.getElementById("multInputOne").value;
-  multiplyValueTwo = document.getElementById("multInputTwo").value;
-  parseFloat(multiplyValueOne);
-  parseFloat(multiplyValueTwo);
+  let multValueOne = document.getElementById('multInputOne').value;
+  let multValueTwo = document.getElementById('multInputTwo').value;
+  parseFloat(multValueOne);
+  parseFloat(multValueTwo);
 
   try {
-    const sum = multiply(multiplyValueOne, multiplyValueTwo);
-    document.getElementById('').innerHTML = sum;
+    const sum = multiply(multValueOne, multValueTwo);
+    document.getElementById('multResult').innerHTML = sum;
   }
   catch(err) {
+    alert(err);
+  }
+}
 
+function displayDivideResults() {
+  let divideValueOne = document.getElementById("divideInputOne").value;
+  let divideValueTwo = document.getElementById("divideInputTwo").value;
+  parseFloat(divideValueOne);
+  parseFloat(divideValueTwo);
+
+  try {
+    const sum = divide(divideValueOne, divideValueTwo);
+    document.getElementById('divResult').innerHTML = sum;
+  }
+  catch(err) {
+    alert(err);
   }
 }
