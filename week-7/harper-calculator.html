@@ -29,7 +29,7 @@
         <h1 class="heading-style">Welcome to the Calculator App!</h1>
       </header>
       <!-- Container division for the markup -->
-      <div class="calc-container" id="container">
+      <div class="calc-container">
         <!-- First card. Contains the multiplication input form and button. -->
         <div class="card input-card">
           <!-- Container for the first card title. -->
@@ -41,12 +41,12 @@
             <div class="card-content">
               <!-- Form which contains a selectable input. -->
               <form class="form">
-                <div class="form-field" id="text-inputs">
+                <div class="form-field">
                   <input type="text" class ="input" id="multInputOne" name="multInputOne">
                   <br>
                   <input type="text" class ="input" id="multInputTwo" name="multInputTwo">
                 </div>
-                <div class="form-field" id="mult-button">
+                <div class="form-field">
                   <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
                   <button type="button" class="btn btn-primary full-width" onclick="displayMultiplyResults()">Multiply</button>
                 </div>
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="calc-container" id="container">
+      <div class="calc-container">
         <!-- First card. Contains the number value input form and button. -->
         <div class="card input-card">
           <!-- Container for the first card title. -->
@@ -80,12 +80,12 @@
             <div class="card-content">
               <!-- Form which contains a selectable input. -->
               <form class="form">
-                <div class="form-field" id="text-inputs">
+                <div class="form-field">
                   <input type="text" class ="input" id="divInputOne" name="multInputOne">
                   <br>
                   <input type="text" class ="input" id="divInputTwo" name="multInputTwo">
                 </div>
-                <div class="form-field" id="mult-button">
+                <div class="form-field">
                   <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
                   <button type="button" class="btn btn-primary full-width" onclick="displayDivideResults()">Divide</button>
                 </div>
@@ -111,7 +111,6 @@
         <!-- Clickable link to return home directory on GitHub. -->
         <a href="https://Jharp949.github.io/web-231/" class="return-home">Return</a>
       </div>
-    </div>
     <!-- Links harper-calculator.js to harper-calculator.html. -->
     <script src="harper-calculator.js"></script>
 
