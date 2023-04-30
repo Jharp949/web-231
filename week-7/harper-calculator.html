@@ -41,16 +41,11 @@
               <form class="form">
                 <!-- Label for the select options list. -->
                 <label for="input-value" id="calcVal">Choose a listing:</label>
-                <!-- Select element with child options for selection. -->
-                <select name="select" class="input" id="input-value">
-                  <option value="default">--Select--</option>
-                  <option value="books">Top 3 Favorite Books</option>
-                  <option value="authors">Top 3 Favorite Authors</option>
-                  <option value="publishers">Top 3 Favorite Publishers</option>
-                </select>
+                <input type="text" id="multInputOne" name="multInputOne">
+                <input type="text" id="multInputTwo" name="multInputTwo">
               </form>
               <!-- button which executes the display() JS function when clicked. -->
-              <button class="btn-primary" onclick="display()">Display Listing</button>
+              <button class="btn-primary" onclick="multiply()">Display Listing</button>
             </div>
         </div>
         <!-- Second card container which hold the results. -->
