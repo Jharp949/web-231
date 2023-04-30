@@ -10,7 +10,7 @@ function multiply(multiplyOne, multiplyTwo) {
     //error message thrown if the result is false.
     throw alert('inputs must be numbers.');
     //additional check that the user input is a valid number using the isNaN() method.
-  } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true){
+  } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true) {
     //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
   }
