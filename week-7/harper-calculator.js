@@ -10,7 +10,7 @@ function multiply(multiplyOne, multiplyTwo) {
     //error message thrown if the result is false.
     throw alert('inputs must be numbers.');
     //additional check that the user input is a valid number using the isNaN() method.
-  } else if (isNaN(multiplyOne) || isNaN(multiplyTwo)){
+  } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true){
     //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
   }
@@ -29,7 +29,7 @@ function divide(divideOne, divideTwo) {
     //alert thrown if the parameter is zero.
     throw alert('cannot divide by zero');
     //Checks that the user input is a valid number using the isNaN() method.
-  } else if (isNaN(divideOne) || isNaN(divideTwo)) {
+  } else if (isNaN(divideOne) === true || isNaN(divideTwo) === true ) {
     //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
     //Additional check to ensure that neither of the numbers are negative.
