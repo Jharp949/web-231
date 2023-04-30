@@ -11,12 +11,19 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 /**
+
+*/
+#container {
+  padding: 10px;
+}
+/**
 Assigns properties to any element with the card class. Shadows on the right and bottom with color black. The transition
 property set the time for the effect to take place in seconds.
 */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  width: 50%;
 }
 /**
 Assigns properties to any element with the card-title class. Centers the text within the element, font size becomes
@@ -41,6 +48,20 @@ Shadows on the right and bottom with color black.
 */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/**
+Assigns properties to any element with the form class. Assign the the display as a grid with the columns set to
+auto. Elements can then be assigned to a space on the page based on the grid column property.
+*/
+.form {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+/**
+Assigns properties to any element with the form-field class. Sets padding on all sides to 20px.
+*/
+.form-field {
+  padding: 20px;
 }
 /**
 Assigns properties to any element with the btn class. Removes the default border, aligns text center within the
@@ -95,20 +116,6 @@ Assigns properties to any element with the full-width class. Makes the width of 
 */
 .full-width {
   width: 100%;
-}
-/**
-Assigns properties to any element with the form class. Assign the the display as a grid with the columns set to
-auto. Elements can then be assigned to a space on the page based on the grid column property.
-*/
-.form {
-  display: inline-grid;
-  grid-template-columns: auto;
-}
-/**
-Assigns properties to any element with the form-field class. Sets padding on all sides to 20px.
-*/
-.form-field {
-  padding: 20px;
 }
 /**
 Color and removal of underline from the link at the bottom of the page.

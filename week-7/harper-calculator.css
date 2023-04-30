@@ -4,65 +4,8 @@
   Date: 4/29/2023
   Description: Web 231 - Week 7 - Assignment 7.2
 */
-
-/**
-Styles the main heading with font thickness and alignment.
-*/
-h1, h4 {
-  font-weight: 400;
+h1 {
   text-align: center;
-}
-/**
-Adds padding to the top of each heading 4.
-*/
-h4 {
-  padding-top: 5px;
-}
-
-h3 {
-  font-weight: lighter;
-}
-/**
-Adjusts the width and margin for the card with an id of bookInput.
-*/
-#calcInput {
-  width: 700px;
-  margin: auto;
-}
-/**
-Width and margin adjusted for the result id.
-*/
-#result {
-  width: 700px;
-  margin: auto;
-}
-/**
-id for the h4 heading Book Results.
-*/
-#result-heading {
-  margin: 30px auto auto auto;
-}
-/**
-Centers text within the element and margin to auto for the container that holds the return number value.
-*/
-#calc-content {
-  text-align: left;
-  margin: auto;
-}
-/**
-Container for the return link. Allows for the link to match the two cards in space.
-*/
-#link-container {
-  width: 700px;
-  text-align: center;
-  margin: 10px auto;
-}
-/**
-Return to main page link.
-*/
-.return-home {
-  float: left;
-  margin-top: 5px;
 }
 /**
 
@@ -77,14 +20,23 @@ Return to main page link.
 /**
 
 */
-#mul-results {
+#mul-results, #div-results {
   text-align: center;
   font-size: 28px;
+  grid-column-start: 3;
 }
 /**
-
+Container for the return link. Allows for the link to match the two cards in space.
 */
-#div-results {
+#link-container {
+  width: 100%;
   text-align: center;
-  font-size: 28px;
+  margin: auto;
+}
+/**
+Return to main page link.
+*/
+.return-home {
+  float: left;
+  margin-top: 5px;
 }

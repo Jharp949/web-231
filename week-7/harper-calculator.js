@@ -6,25 +6,28 @@
 
 function multiply(multiplyOne, multiplyTwo) {
 
-  if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true) {
+  const product = multiplyOne * multiplyTwo;
+
+  if (typeof multiplyOne == 'number' || typeof multiplyTwo == 'number') {
     throw alert('inputs must be numbers.');
-  } else {
-    let product = multiplyOne * multiplyTwo;
-    return product;
+  } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true){
+    throw alert('inputs must be numbers.');
   }
+
+    return product;
 }
-console.log(multiply(5, 9));
+//console.log(multiply(5, 9));
 
 
 function divide(divideOne, divideTwo) {
 
-  let division = divideOne / divideTwo;
+  const division = divideOne / divideTwo;
 
-  if (divideTwo === 0) {
+  if (divideTwo == 0) {
     throw alert('cannot divide by zero');
   } else if (isNaN(divideOne) === true || isNaN(divideTwo) === true) {
     throw alert('inputs must be numbers.');
-  } else if (divideOne < 0 || divideTwo < 0 === 'True') {
+  } else if (divideOne < 0 || divideTwo < 0 === true) {
     throw alert('inputs must be valid numbers.');
   }
 
@@ -33,31 +36,31 @@ function divide(divideOne, divideTwo) {
 //console.log(divide(28, 7));
 
 function displayMultiplyResults() {
-  let multValueOne = document.getElementById('multInputOne').value;
-  let multValueTwo = document.getElementById('multInputTwo').value;
+  const multValueOne = document.getElementById('multInputOne').value;
+  const multValueTwo = document.getElementById('multInputTwo').value;
   parseFloat(multValueOne);
   parseFloat(multValueTwo);
 
   try {
     const sum = multiply(multValueOne, multValueTwo);
-    document.getElementById('multResult').innerHTML = sum;
+    document.getElementById('mul-results').innerHTML = multValueOne + ' * ' + multValueTwo + ' = ' + sum;
   }
   catch(err) {
-    alert(err);
+    console.log(err);
   }
 }
 
 function displayDivideResults() {
-  let divideValueOne = document.getElementById("divideInputOne").value;
-  let divideValueTwo = document.getElementById("divideInputTwo").value;
-  parseFloat(divideValueOne);
-  parseFloat(divideValueTwo);
+  const divValueOne = document.getElementById("divInputOne").value;
+  const divValueTwo = document.getElementById("divInputTwo").value;
+  parseFloat(divValueOne);
+  parseFloat(divValueTwo);
 
   try {
-    const sum = divide(divideValueOne, divideValueTwo);
-    document.getElementById('divResult').innerHTML = sum;
+    const sum = divide(divValueOne, divValueTwo);
+    document.getElementById('div-results').innerHTML = divValueOne + ' / ' + divValueTwo + ' = ' + sum;
   }
   catch(err) {
-    alert(err);
+    console.log(err);
   }
 }

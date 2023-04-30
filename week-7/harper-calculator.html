@@ -13,7 +13,7 @@
 -->
   <head>
     <!-- Defines the title of the document -->
-    <title>WEB 231 - Enterprise Javascript I: Assignment 6.2</title>
+    <title>WEB 231 - Enterprise Javascript I: Assignment 7.2</title>
     <!-- Links the stylesheet to the HTML document -->
     <link rel="stylesheet" href="harper-calculator.css" type="text/css">
     <link rel="stylesheet" href="../global.css" type="text/css">
@@ -24,41 +24,88 @@
   </head>
   <!-- Establishes the body of the HTML document. This is where all of the visual and user interaction lies. -->
   <body>
-    <!-- Container division for the markup -->
-    <div id="container">
       <!-- Heading 1 and title of the document. -->
-      <h1 class="heading-style">Welcome to the Bookstore App</h1>
+      <header>
+        <h1 class="heading-style">Welcome to the Calculator App!</h1>
+      </header>
+      <!-- Container division for the markup -->
+      <div id="container calc-container">
         <!-- First card. Contains the number value input form and button. -->
-        <div class="card" id="calcInput">
+        <div class="card">
           <!-- Container for the first card title. -->
           <div class="card-title">
             <!-- First card title. -->
-            <h4>My Favorites</h4>
+            Multiply Form
           </div>
             <!-- Content for the first card. -->
             <div class="card-content">
               <!-- Form which contains a selectable input. -->
-              <form class="calc-container">
-                <input type="text" class ="input" id="multInputOne" name="multInputOne">
-                <input type="text" class ="input" id="multInputTwo" name="multInputTwo">
+              <form class="form">
+                <div class="form-field" id="text-inputs">
+                  <input type="text" class ="input" id="multInputOne" name="multInputOne">
+                  <br>
+                  <input type="text" class ="input" id="multInputTwo" name="multInputTwo">
+                </div>
+                <div class="form-field" id="mult-button">
+                  <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
+                  <button type="button" class="btn btn-primary full-width" onclick="displayMultiplyResults()">Multiply</button>
+                </div>
               </form>
-              <!-- button which executes the display() JS function when clicked. -->
-              <button class="btn-primary" onclick="displayMultiplyResults()">Display Listing</button>
             </div>
         </div>
         <!-- Second card container which hold the results. -->
-        <div class="card" id="result">
+        <div class="card">
           <!-- Title container. -->
           <div class="card-title">
             <!-- Second card title. -->
-            <h4 id="result-heading">Results</h4>
+            Results
           </div>
             <!-- Second card content container. -->
-            <div class="card-content" id="mul-results">
+            <div class="card-content">
               <!-- Span which holds the returned value. -->
-             <span id="multResult"></span>
+              <span id="mul-results"></span>
             </div>
         </div>
+      </div>
+
+      <div id="container calc-container">
+        <!-- First card. Contains the number value input form and button. -->
+        <div class="card">
+          <!-- Container for the first card title. -->
+          <div class="card-title">
+            <!-- Second card title. -->
+            Division Form
+          </div>
+            <!-- Content for the first card. -->
+            <div class="card-content">
+              <!-- Form which contains a selectable input. -->
+              <form class="form">
+                <div class="form-field" id="text-inputs">
+                  <input type="text" class ="input" id="divInputOne" name="multInputOne">
+                  <br>
+                  <input type="text" class ="input" id="divInputTwo" name="multInputTwo">
+                </div>
+                <div class="form-field" id="mult-button">
+                  <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
+                  <button type="button" class="btn btn-primary full-width" onclick="displayDivideResults()">Divide</button>
+                </div>
+              </form>
+            </div>
+        </div>
+        <!-- Second card container which hold the results. -->
+        <div class="card">
+          <!-- Title container. -->
+          <div class="card-title">
+            <!-- Second card title. -->
+            Results
+          </div>
+            <!-- Second card content container. -->
+            <div class="card-content">
+              <!-- Span which holds the returned value. -->
+              <span id="div-results"></span>
+            </div>
+        </div>
+      </div>
 
       <div id="link-container">
         <!-- Clickable link to return home directory on GitHub. -->
