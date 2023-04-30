@@ -3,28 +3,38 @@
 //Date: 4/29/2023
 //Description: Web 231 - Week 7 - Assignment 7.2
 
-
+//A function with two parameters that check if conditions are true. Then carry out multiplication of the parameters.
 function multiply(multiplyOne, multiplyTwo) {
-
+//if statement that verifies that the user input is a valid number. Uses the typeof operator.
   if (typeof multiplyOne == 'number' || typeof multiplyTwo == 'number') {
+    //error message thrown if the result is false.
     throw alert('inputs must be numbers.');
-  } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true){
+    //additional check that the user input is a valid number using the isNaN() method.
+  } else if (isNaN(multiplyOne) || isNaN(multiplyTwo) === true){
+    //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
   }
-
+  //variable that multiplies the two parameters together.
   const product = multiplyOne * multiplyTwo;
+  //variable product returned as a result to executing the function.
   return product;
 }
+//Checks if the function is operating properly.
 //console.log(multiply(5, 9));
 
-
+//A function with two parameters with check statements. Division is carried out if the conditions are met.
 function divide(divideOne, divideTwo) {
-
+  //checks whether or not the divisor parameter is zero.
   if (divideTwo == 0) {
+    //alert thrown if the parameter is zero.
     throw alert('cannot divide by zero');
+    //Checks that the user input is a valid number using the isNaN() method.
   } else if (isNaN(divideOne) === true || isNaN(divideTwo) === true) {
+    //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
+    //Additional check to ensure that neither of the numbers are negative.
   } else if (divideOne < 0 || divideTwo < 0 === true) {
+    //Alert thrown is
     throw alert('inputs must be valid numbers.');
   }
 
