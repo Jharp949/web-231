@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 /**
-
+Overall division container which adjusts the padding to 10px all around.
 */
 #container {
   padding: 10px;

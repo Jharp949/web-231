@@ -24,11 +24,12 @@
   </head>
   <!-- Establishes the body of the HTML document. This is where all of the visual and user interaction lies. -->
   <body>
-      <!-- Heading 1 and title of the document. -->
+      <!-- Header for the document -->
       <header>
+        <!-- Heading 1 and title of the document. -->
         <h1 class="heading-style">Welcome to the Calculator App!</h1>
       </header>
-      <!-- Container division for the markup -->
+      <!-- Container division for the multiply card -->
       <div class="calc-container">
         <!-- First card. Contains the multiplication input form and button. -->
         <div class="card input-card">
@@ -39,13 +40,18 @@
           </div>
             <!-- Content for the first card. -->
             <div class="card-content">
-              <!-- Form which contains a selectable input. -->
+              <!-- Form which contains two user inputs. -->
               <form class="form">
+                <!-- Container for the input values. -->
                 <div class="form-field">
+                  <!-- Input one -->
                   <input type="text" class ="input" id="multInputOne" name="multInputOne">
+                  <!-- Line break. -->
                   <br>
+                  <!-- Input two. -->
                   <input type="text" class ="input" id="multInputTwo" name="multInputTwo">
                 </div>
+                <!-- Container for the submit button. -->
                 <div class="form-field">
                   <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
                   <button type="button" class="btn btn-primary full-width" onclick="displayMultiplyResults()">Multiply</button>
@@ -53,7 +59,7 @@
               </form>
             </div>
         </div>
-        <!-- Second card container which hold the results. -->
+        <!-- Second card container which hold the multiply results. -->
         <div class="card result">
           <!-- Title container. -->
           <div class="card-title">
@@ -67,39 +73,44 @@
             </div>
         </div>
       </div>
-
+      <!-- Container division for the division card -->
       <div class="calc-container">
-        <!-- First card. Contains the number value input form and button. -->
+        <!-- Third card. Contains the division input form and button. -->
         <div class="card input-card">
-          <!-- Container for the first card title. -->
+          <!-- Container for the second card title. -->
           <div class="card-title">
             <!-- Second card title. -->
             Division Form
           </div>
-            <!-- Content for the first card. -->
+            <!-- Content for the third card. -->
             <div class="card-content">
-              <!-- Form which contains a selectable input. -->
+              <!-- Form which contains two user inputs. -->
               <form class="form">
+                <!-- Container for the input values. -->
                 <div class="form-field">
+                  <!-- Input one -->
                   <input type="text" class ="input" id="divInputOne" name="multInputOne">
+                  <!-- Line break. -->
                   <br>
+                  <!-- Input two. -->
                   <input type="text" class ="input" id="divInputTwo" name="multInputTwo">
                 </div>
+                <!-- Container for the submit button. -->
                 <div class="form-field">
-                  <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
+                  <!-- button which executes the displayDivideResults() JS function when clicked. -->
                   <button type="button" class="btn btn-primary full-width" onclick="displayDivideResults()">Divide</button>
                 </div>
               </form>
             </div>
         </div>
-        <!-- Second card container which hold the results. -->
+        <!-- Fourth card container which hold the division results. -->
         <div class="card result">
           <!-- Title container. -->
           <div class="card-title">
-            <!-- Second card title. -->
+            <!-- Second results card title. -->
             Results
           </div>
-            <!-- Second card content container. -->
+            <!-- Fourth card content container. -->
             <div class="card-content span-results">
               <!-- Span which holds the returned value. -->
               <span id="div-results"></span>

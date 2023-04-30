@@ -4,15 +4,21 @@
   Date: 4/29/2023
   Description: Web 231 - Week 7 - Assignment 7.2
 */
+/**
+Aligns the heading 1 center of its container
+*/
 h1 {
   text-align: center;
 }
+/**
+Class that assigns the width and grid position.
+*/
 .input-card {
   width: 400px;
   grid-column: 1;
 }
 /**
-Width and margin adjusted for the result id.
+Width and margin adjusted for the result class.
 */
 .result {
   width: 400px;
@@ -20,7 +26,9 @@ Width and margin adjusted for the result id.
   grid-column-start: 2;
 }
 /**
-
+Class for the multiply and divide cards. Sets the display to an assignable grid, width to 800px, margin top to 3%,
+right and left to auto, bottom to 0, gaps between each column are 15px, fr is a fractional until which takes up one
+part of the available space.
 */
 .calc-container {
   display: grid;
@@ -29,11 +37,14 @@ Width and margin adjusted for the result id.
   column-gap: 15px;
   grid-template-columns: 1fr 1fr;
 }
+/**
+Aligns the span container results to center.
+*/
 .span-results {
   text-align: center;
 }
 /**
-
+Centers the results text and sets the font size to 28px.
 */
 #mul-results, #div-results {
   text-align: center;
