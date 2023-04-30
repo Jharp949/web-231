@@ -6,15 +6,14 @@
 
 function multiply(multiplyOne, multiplyTwo) {
 
-  let product = multiplyOne * multiplyTwo;
-
-  if (isNaN(multiplyOne) && isNaN(multiplyTwo) === 'True') {
+  if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true) {
     throw alert('inputs must be numbers.');
+  } else {
+    let product = multiplyOne * multiplyTwo;
+    return product;
   }
-
-  return product;
 }
-//console.log(multiply(5, 9));
+console.log(multiply(5, 9));
 
 
 function divide(divideOne, divideTwo) {
@@ -23,7 +22,7 @@ function divide(divideOne, divideTwo) {
 
   if (divideTwo === 0) {
     throw alert('cannot divide by zero');
-  } else if (isNaN(divideOne) && isNaN(divideTwo) === 'True') {
+  } else if (isNaN(divideOne) === true || isNaN(divideTwo) === true) {
     throw alert('inputs must be numbers.');
   } else if (divideOne < 0 || divideTwo < 0 === 'True') {
     throw alert('inputs must be valid numbers.');
