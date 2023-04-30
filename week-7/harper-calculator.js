@@ -6,22 +6,19 @@
 
 function multiply(multiplyOne, multiplyTwo) {
 
-  const product = multiplyOne * multiplyTwo;
-
   if (typeof multiplyOne == 'number' || typeof multiplyTwo == 'number') {
     throw alert('inputs must be numbers.');
   } else if (isNaN(multiplyOne) === true || isNaN(multiplyTwo) === true){
     throw alert('inputs must be numbers.');
   }
 
-    return product;
+  const product = multiplyOne * multiplyTwo;
+  return product;
 }
 //console.log(multiply(5, 9));
 
 
 function divide(divideOne, divideTwo) {
-
-  const division = divideOne / divideTwo;
 
   if (divideTwo == 0) {
     throw alert('cannot divide by zero');
@@ -31,6 +28,7 @@ function divide(divideOne, divideTwo) {
     throw alert('inputs must be valid numbers.');
   }
 
+  const division = divideOne / divideTwo;
   return division;
 }
 //console.log(divide(28, 7));
