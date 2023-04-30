@@ -6,7 +6,7 @@
 //A function with two parameters that check if conditions are true. Then carry out multiplication of the parameters.
 function multiply(multiplyOne, multiplyTwo) {
 //if statement that verifies that the user input is a valid number. Uses the typeof operator.
-  if (typeof multiplyOne != 'number' || typeof multiplyTwo != 'number') {
+  if (typeof multiplyOne !== "number" || typeof multiplyTwo !== "number") {
     //error message thrown if the result is false.
     throw alert('inputs must be numbers.');
     //additional check that the user input is a valid number using the isNaN() method.
@@ -48,12 +48,12 @@ function divide(divideOne, divideTwo) {
 //Function that executes multiply() then assigns it to a HTML element.
 function displayMultiplyResults() {
   //Variable derived from the user input HTML id multInputOne.
-  const multValueOne = document.getElementById('multInputOne').value;
+  const valueOne = document.getElementById('multInputOne').value;
   //Variable derived from the user input HTML id multInputTwo.
-  const multValueTwo = document.getElementById('multInputTwo').value;
+  const valueTwo = document.getElementById('multInputTwo').value;
   //Ensures the input is in number form for the function parameter to operate.
-  parseFloat(multValueOne);
-  parseFloat(multValueTwo);
+  const multValueOne = parseFloat(valueOne);
+  const multValueTwo = parseFloat(valueTwo);
   //try statement that executes multiply(). Then assigns the value to the span with an id of mul-results.
   try {
     const sum = multiply(multValueOne, multValueTwo);
@@ -67,12 +67,12 @@ function displayMultiplyResults() {
 //Function that executes divide() then assigns it to a HTML element.
 function displayDivideResults() {
   //Variable derived from the user input HTML id divInputOne.
-  const divValueOne = document.getElementById("divInputOne").value;
+  const valueOne = document.getElementById("divInputOne").value;
   //Variable derived from the user input HTML id divInputTwo.
-  const divValueTwo = document.getElementById("divInputTwo").value;
+  const valueTwo = document.getElementById("divInputTwo").value;
   //Ensures the input is in number form for the function parameter to operate.
-  parseFloat(divValueOne);
-  parseFloat(divValueTwo);
+  const divValueOne = parseFloat(valueOne);
+  const divValueTwo = parseFloat(valueTwo);
   //try statement that executes divide(). Then assigns the value to the span with an id of div-results.
   try {
     const sum = divide(divValueOne, divValueTwo);
