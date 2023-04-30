@@ -6,7 +6,7 @@
 //A function with two parameters that check if conditions are true. Then carry out multiplication of the parameters.
 function multiply(multiplyOne, multiplyTwo) {
 //if statement that verifies that the user input is a valid number. Uses the typeof operator.
-  if (typeof multiplyOne == 'number' || typeof multiplyTwo == 'number') {
+  if (typeof multiplyOne != 'number' || typeof multiplyTwo != 'number') {
     //error message thrown if the result is false.
     throw alert('inputs must be numbers.');
     //additional check that the user input is a valid number using the isNaN() method.
