@@ -32,10 +32,6 @@ function divide(divideOne, divideTwo) {
   } else if (isNaN(divideOne) === true || isNaN(divideTwo) === true ) {
     //error message thrown if the result is true.
     throw alert('inputs must be numbers.');
-    //Additional check to ensure that neither of the numbers are negative.
-  } else if (divideOne < 0 || divideTwo < 0) {
-    //Alert thrown if either condition is true.
-    throw alert('inputs must be valid numbers.');
   }
   //variable that divides the two parameters.
   const division = divideOne / divideTwo;
