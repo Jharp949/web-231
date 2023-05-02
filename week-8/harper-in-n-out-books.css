@@ -1,0 +1,47 @@
+/**
+  Title: harper-in-n-out-books.css
+  Author: James Harper
+  Date: 5/1/2023
+  Description: Web 231 - Week 8 - Assignment 8.2
+*/
+/**
+Aligns the heading 1 center of its container
+*/
+h1 {
+  text-align: center;
+}
+/**
+
+*/
+.card {
+  width: 500px;
+  margin: auto;
+}
+/**
+
+*/
+#results-card {
+  margin-top: 15px;
+}
+/**
+Aligns the span container results to center.
+*/
+.span-results {
+  text-align: center;
+}
+
+/**
+Container for the return link. Allows for the link to match the two cards in space.
+*/
+#link-container {
+  width: 500px;
+  margin: auto;
+}
+/**
+Return to main page link.
+*/
+.return-home {
+  float: left;
+  margin-top: 5px;
+  width: 10%;
+}
