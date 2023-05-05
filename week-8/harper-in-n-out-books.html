@@ -3,7 +3,7 @@
 <!-- Sets the document type as HTML in english -->
 <html lang="en">
 <!--
-  Title: harper-calculator.html
+  Title: harper-in-n-out-books.html
   Author: James Harper
   Date: 5/1/2023
   Description: Web 231 - Week 8 - Assignment 8.2
@@ -29,9 +29,9 @@
         <!-- Heading 1 and title of the document. -->
         <h1 class="heading-style">Welcome to In-N-Out-Books</h1>
       </header>
-      <!-- Container division for the multiply card -->
+      <!-- Container division for the My Favorites card -->
       <div class="container" id="container">
-        <!-- First card. Contains the multiplication input form and button. -->
+        <!-- First card. Contains a selectable option list. -->
         <div class="card">
           <!-- Container for the first card title. -->
           <div class="card-title">
@@ -40,29 +40,28 @@
           </div>
             <!-- Content for the first card. -->
             <div class="card-content">
-              <!-- Form which contains two user inputs. -->
+              <!-- Form which contains one selectable input. -->
               <form class="form">
                 <!-- Container for the input values. -->
                 <div class="form-field">
                 <!-- Label for the select options list. -->
-                <label for="input-value" id="bookVal">Choose a listing:</label>
-                <!-- A select element with child options for selection. -->
+                <label for="input-value">Choose a listing:</label>
+                <!-- A select element with child options for the user to choose. -->
                   <select name="select" class="input" id="select-value">
                     <option value="default">--Select--</option>
                     <option value="books">Top 3 Favorite Books</option>
                     <option value="authors">Top 3 Favorite Authors</option>
-                    <option value="publishers">Top 3 Favorite Publishers</option>
                   </select>
                 </div>
                 <!-- Container for the submit button. -->
                 <div class="form-field">
-                  <!-- button which executes the displayMultiplyResults() JS function when clicked. -->
-                  <button type="button" class="btn btn-primary full-width" onclick="displayMultiplyResults()">Display Listing</button>
+                  <!-- button which executes the display() JS function when clicked. -->
+                  <button type="button" class="btn btn-primary full-width" onclick="display()">Display Listing</button>
                 </div>
               </form>
             </div>
         </div>
-        <!-- Second card container which hold the multiply results. -->
+        <!-- Second card container which hold the results. -->
         <div class="card" id="results-card">
           <!-- Title container. -->
           <div class="card-title">
@@ -72,7 +71,7 @@
             <!-- Second card content container. -->
             <div class="card-content span-results">
               <!-- Span which holds the returned value. -->
-              <span class="results"></span>
+              <span id="results"></span>
             </div>
         </div>
       </div>

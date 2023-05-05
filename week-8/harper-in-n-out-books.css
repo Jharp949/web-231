@@ -4,6 +4,7 @@
   Date: 5/1/2023
   Description: Web 231 - Week 8 - Assignment 8.2
 */
+
 /**
 Aligns the heading 1 center of its container
 */
@@ -11,25 +12,24 @@ h1 {
   text-align: center;
 }
 /**
-
+Adjusts with and margin for all classes named card.
 */
 .card {
   width: 500px;
   margin: auto;
 }
 /**
-
+Adjusts the margin top for the id named results-card.
 */
 #results-card {
   margin-top: 15px;
 }
 /**
-Aligns the span container results to center.
+Aligns the span container results to left.
 */
 .span-results {
-  text-align: center;
+  text-align: left;
 }
-
 /**
 Container for the return link. Allows for the link to match the two cards in space.
 */
@@ -44,4 +44,10 @@ Return to main page link.
   float: left;
   margin-top: 5px;
   width: 10%;
+}
+/**
+Reduces the font weight for heading 3.
+*/
+h3 {
+  font-weight: lighter;
 }
