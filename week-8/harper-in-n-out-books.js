@@ -42,10 +42,9 @@ function display() {
           <tbody>
         `;
 
-        const bookValues = Object.values(books); //Method which returns an array of the property values for books.
-        const valueIsbn = bookValues[0]; //Variable assigned to the first array of books.
-        const valueTitle = bookValues[1]; //Variable assigned to the second array of books.
-        const valuePages = bookValues[2]; //Variable assigned to the third array of books.
+        const valueIsbn = books.isbn; //Variable assigned to the first property array of books.
+        const valueTitle = books.title; //Variable assigned to the second property array of books.
+        const valuePages = books.pages; //Variable assigned to the third property array of books.
 
         //for loop which iterates through all index values of each array.
         for (let value = 0; value < books.isbn.length; value++) {
@@ -89,9 +88,8 @@ function display() {
           <tbody>
         `;
 
-        const authorValues = Object.values(authors); //Method which returns an array of the property values for authors.
-        const authorName = authorValues[0]; //Variable assigned to the first array of authors.
-        const authorGenre = authorValues[1]; //Variable assigned to the second array of authors.
+        const authorName = authors.name; //Variable assigned to the first property array of authors.
+        const authorGenre = authors.genre; //Variable assigned to the second property array of authors.
 
         //for loop which iterates through all index values of each array.
         for (let value = 0; value < authors.name.length; value++) {
