@@ -107,7 +107,7 @@ function display() {
           tblAuthors += row; //Adds the value of row to the tblAuthors variable.
         };
 
-        //Adds closing tags to the tblBooks variable.
+        //Adds closing tags to the tblAuthors variable.
         tblAuthors += `
         </tbody>
         </table>
