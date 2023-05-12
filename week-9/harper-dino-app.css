@@ -1,0 +1,74 @@
+/**
+  Title: harper-dino-app.css
+  Author: James Harper
+  Date: 5/12/2023
+  Description: Web 231 - Week 9 - Assignment 9.2
+*/
+
+/**
+Aligns the heading 1 center of its container
+*/
+h1 {
+  text-align: center;
+  font-weight: normal;
+}
+/**
+Adjusts with and margin for all classes named card.
+*/
+.card {
+  width: 500px;
+  margin: auto;
+}
+/**
+
+*/
+.card-title {
+  margin: 5px;
+}
+/**
+Adjusts the margin top for the id named results-card.
+*/
+#results-card {
+  margin-top: 15px;
+}
+/**
+Aligns the span container results to left.
+*/
+.span-results {
+  text-align: left;
+}
+/**
+Container for the return link. Allows for the link to match the two cards in space.
+*/
+#link-container {
+  width: 500px;
+  margin: auto;
+}
+/**
+Return to main page link.
+*/
+.return-home {
+  float: left;
+  width: 10%;
+}
+fieldset {
+  border-color: #000;
+}
+/**
+
+*/
+.form {
+  margin: auto;
+  width: 100%;
+}
+/**
+
+*/
+#options-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 175px;
+  width: 91%;
+  padding: 0 20px;
+}
