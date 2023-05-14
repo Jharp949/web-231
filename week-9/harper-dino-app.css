@@ -6,7 +6,7 @@
 */
 
 /**
-Aligns the heading 1 center of its container
+Aligns the heading 1 center of its container.
 */
 h1 {
   text-align: center;
@@ -20,7 +20,7 @@ Adjusts with and margin for all classes named card.
   margin: auto;
 }
 /**
-
+Adjusts margin for card-title class.
 */
 .card-title {
   margin: 5px;
@@ -35,7 +35,8 @@ Adjusts the margin top for the id named results-card.
 Aligns the span container results to left.
 */
 .span-results {
-  text-align: left;
+  text-align: center;
+  font-size: 1.5em;
 }
 /**
 Container for the return link. Allows for the link to match the two cards in space.
@@ -55,14 +56,15 @@ fieldset {
   border-color: #000;
 }
 /**
-
+Adjusts margin and width for form class.
 */
 .form {
   margin: auto;
   width: 100%;
 }
 /**
-
+Sets the CSS of the options-form id which contains the radio buttons. Display flex is a responsive format
+that allows for the child elements to be arranged in a column and spaced evenly apart.
 */
 #options-form {
   display: flex;
